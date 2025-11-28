@@ -17,5 +17,4 @@ State file only:
 State + lock file:
 ![alt text](image.png) # state file lock
 
-See lab instructions on D2L.
 
