@@ -5,6 +5,13 @@ terraform {
       version = "~> 6.0"
     }
   }
+  backend "s3" {
+    bucket        = "my-terraform-backend-bucket-mariel-4640"   
+    key           = "terraform/state/terraform.tfstate"         
+    region        = "us-west-2"                                 
+    encrypt       = true
+    use_lockfile  = true
+  }
 }
 
 provider "aws" {
